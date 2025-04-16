@@ -5,18 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Relatório - Looker Studio</title>
   <style>
+    :root {
+      color-scheme: light dark;
+    }
+
     body {
       margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background-color: #f8f9fa;
+      padding: 0 8px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #f2f2f2;
     }
 
     .iframe-container {
       position: relative;
       width: 100%;
       height: 0;
-      padding-bottom: 75%;
+      padding-bottom: 130%; /* Maior altura para vertical */
+      margin-top: 16px;
     }
 
     .iframe-container iframe {
@@ -25,7 +30,9 @@
       left: 0;
       width: 100%;
       height: 100%;
-      border: 0;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -33,7 +40,6 @@
   <div class="iframe-container">
     <iframe 
       src="https://lookerstudio.google.com/embed/reporting/7f85d365-95c6-4f13-8a8d-d934d7e3587d/page/1qi9D" 
-      frameborder="0"
       allowfullscreen
       sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
     </iframe>
